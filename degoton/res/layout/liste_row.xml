@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="110dp" >
+
+     <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:id="@+id/rlayoutTitre"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <TextView
+                android:id="@+id/titre"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Titre" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/rlayoutPrix"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" >
+
+            <TextView
+                android:id="@+id/prix"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+                android:text="50€" />
+
+            <TextView
+                android:id="@+id/promo"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+                android:layout_below="@+id/prix"
+                android:text="soit - 50%" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlayoutDistance"
+            android:layout_width="55dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" >
+
+            <TextView
+                android:id="@+id/distance"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+                android:text="1 Km" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlayoutTemps"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="19dp"
+            android:layout_toRightOf="@+id/rlayoutPrix" >
+
+            <TextView
+                android:id="@+id/temps"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Temps restant : 00:25:30" />
+        </RelativeLayout>
+ 
+</RelativeLayout>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical" >
+ 
+
+<TextView
+    android:id="@+id/Textnow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/relativeLayout2"
+    android:text="@string/now" />
+
+<ViewFlipper
+    android:id="@+id/view_flipper"
+    android:layout_width="fill_parent"
+    android:layout_height="296dp"
+    android:layout_below="@+id/Textnow" >
+
+<RelativeLayout
+    android:id="@+id/rlayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="296dp" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        style="@style/ImagePromo" >
+        
+        <TextView
+        	android:id="@+id/prixView1"
+            style="@style/ImageTitle"
+            android:text="@string/hello_world" />
+        <TextView
+        	android:id="@+id/promoView1"
+            style="@style/ImageDescription"
+            android:text="@string/hello_world" />
+
+    </RelativeLayout>
+        
+        
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentLeft="true"
+        android:gravity="bottom" >
+
+        <TextView
+        	android:id="@+id/titreView1"
+            style="@style/ImageTitle"
+            android:text="@string/lightning" />
+
+        <TextView
+        	android:id="@+id/descriptionView1"
+            style="@style/ImageDescription"
+            android:text="@string/hello_world" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/rlayout2"
+    android:layout_width="fill_parent"
+    android:layout_height="296dp" >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        style="@style/ImagePromo" >
+        
+        <TextView
+        	android:id="@+id/prixView2"
+            style="@style/ImageTitle"
+            android:text="@string/hello_world" />
+        <TextView
+        	android:id="@+id/promoView2"
+            style="@style/ImageDescription"
+            android:text="@string/hello_world" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:gravity="bottom" >
+
+        <TextView
+        	android:id="@+id/titreView2"
+            style="@style/ImageTitle"
+            android:text="@string/color_baloons" />
+
+        <TextView
+        	android:id="@+id/descriptionView2"
+            style="@style/ImageDescription"
+            android:text="@string/hello_world" />
+    </RelativeLayout>
+</RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/rlayout3"
+    android:layout_width="fill_parent"
+    android:layout_height="296dp" >
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
+	<RelativeLayout
+        style="@style/ImagePromo" >
+        
+        <TextView
+       		android:id="@+id/prixView3"
+            style="@style/ImageTitle"
+            android:text="@string/hello_world" />
+        <TextView
+        	android:id="@+id/promoView3"
+            style="@style/ImageDescription"
+            android:text="@string/hello_world" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignParentLeft="true"
+        android:gravity="bottom" >
+
+        <TextView
+        	android:id="@+id/titreView3"
+            style="@style/ImageTitle" />
+
+        <TextView
+        	android:id="@+id/descriptionView3"
+            style="@style/ImageDescription"
+            android:text="@string/hello_world" />
+    </RelativeLayout>
+</RelativeLayout>
+
+</ViewFlipper>
+
+ 
+<ImageView
+android:id="@+id/swipe_left"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentLeft="true"
+android:layout_centerVertical="true"
+android:src="@drawable/swipe_left" />
+ 
+<ImageView
+android:id="@+id/swipe_right"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentRight="true"
+android:layout_centerVertical="true"
+android:src="@drawable/swipe_right" />
+
+<RelativeLayout
+    android:id="@+id/relativeLayout2"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+<TextView
+    android:id="@+id/textAppName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:gravity="center_horizontal"
+    android:text="@string/app_name"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textSize="30sp" />
+
+<TextView
+    android:id="@+id/slogan"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textAppName"
+    android:text="@string/slogan" />
+</RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/relativeLayout3"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/view_flipper" >
+	
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="25dip"
+                android:layout_marginTop="25dip"
+                android:background="@android:drawable/btn_default"
+                android:src="@drawable/offre" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="25dip"
+                android:layout_marginTop="25dip"
+                android:background="@android:drawable/btn_default"
+                android:src="@drawable/user" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="25dip"
+                android:layout_marginTop="25dip"
+                android:background="@android:drawable/btn_default"
+                android:src="@drawable/panier"
+                android:tag="@android:drawable/btn_default" />
+
+        </LinearLayout>
+
+</RelativeLayout>
+ 
+</RelativeLayout>
